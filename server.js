@@ -30,6 +30,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use("/", (req, res) => {
+  res.send("Simple app");
+});
+
 app.use("/home", home);
 
 app.listen(port, () => console.log("Server running"));
