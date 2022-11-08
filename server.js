@@ -33,3 +33,5 @@ app.use((req, res, next) => {
 app.use("/home", home);
 
 app.listen(port, () => console.log("Server running"));
+
+module.exports = app;
